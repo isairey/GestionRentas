@@ -1,185 +1,252 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-# Rental System Management
+<img width="220" src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png" />
 
-A full‑stack **system management platform** built with **Next.js**. Rental System Management is designed to manage users, records, and operational workflows efficiently with a modern, scalable, and developer‑friendly architecture.
+# 🏢 Rental System Management
 
-> ⚡ Built with performance, scalability, and real‑world system management use‑cases in mind.
+### Plataforma moderna para gestión de rentas y comunicación inmobiliaria 🚀
 
----
+<p align="center">
+  <b>Rental System Management</b> es una plataforma Full Stack desarrollada con Next.js para optimizar la administración de propiedades, inquilinos, pagos y comunicación entre propietarios y arrendatarios.
+</p>
 
-# 🚀 Overview
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-FullStack-black?style=for-the-badge&logo=next.js&logoColor=white">
+  <img src="https://img.shields.io/badge/MongoDB-Database-47A248?style=for-the-badge&logo=mongodb&logoColor=white">
+  <img src="https://img.shields.io/badge/TailwindCSS-ModernUI-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white">
+  <img src="https://img.shields.io/badge/OpenSource-Platform-success?style=for-the-badge">
+</p>
 
-The **Rental System Management** is a **landlord–tenant communication and management platform** built to streamline interaction, integrity, transparency, and operational control between **property owners (landlords)** and **tenants**.
+<p align="center">
+  <a href="#-acerca-del-proyecto">Acerca</a> •
+  <a href="#-características">Características</a> •
+  <a href="#-tecnologías-utilizadas">Tecnologías</a> •
+  <a href="#-instalación">Instalación</a> •
+  <a href="#-roadmap">Roadmap</a>
+</p>
 
-At its core, Rental System Management enables **secure communication**, **structured record management**, and **administrative oversight**, while still supporting all general system management features such as authentication, dashboards, and data control.
-
-The platform is designed to reduce friction in rental management by centralizing:
-
-* Communication between landlords and tenants
-* Property-related updates and notices
-* Tenant records and system data
-
-It follows modern full-stack best practices using **Next.js App Router**, **API routes**, and **MongoDB (Mongoose)**.
-
----
-
-# DISCLAIMER ⚠️⚠️
-## Authentication in this system is about access control, not user discovery.
-
- 
-## HOW IT WORKS 
-### 🔐 Getting Started (Admin → Tenant Flow)
-
-1. **Log in as Admin**
-   - Use the admin credentials provided during setup.
-   - This gives you access to the main dashboard.
-    ________________________
-     ADMIN ID: Arnoldk       
-     PASSCODE: qwertyuiop   
-   __________________________
-
-2. **Create a Tenant**
-   - From the admin dashboard, create a tenant by assigning:
-     - Room number  
-     - Login credentials
-   - Save the tenant details.
-
-3. **Log in as Tenant**
-   - Log out from the admin account.
-   - Log in using the tenant credentials you just created.
-   - The tenant can now access their dashboard and interact with the system.
-
-> ℹ️ Note: Tenant accounts cannot self-register. All tenant credentials are created and managed by the admin.
-
+</div>
 
 ---
 
-## 🧠 Key Features
+# 🌌 Acerca del proyecto
 
-### 💬 Landlord–Tenant Communication
+**Rental System Management** es una plataforma web enfocada en la administración moderna de propiedades y la comunicación entre propietarios e inquilinos.
 
-- Secure messaging between landlords and tenants
+El sistema fue diseñado para centralizar:
 
-- Centralized communication history
+- 🏢 Gestión de propiedades
+- 👥 Administración de inquilinos
+- 💬 Comunicación landlord-tenant
+- 💰 Seguimiento de pagos
+- 📄 Control de registros
+- 🔐 Administración segura
+- 📊 Dashboards operativos
+- 🏠 Gestión de vacantes
 
-- Broadcast announcements (e.g. rent reminders, maintenance notices)
+La plataforma implementa una arquitectura Full Stack moderna utilizando:
 
-### 🏠 Tenant & Property Management
-
-- Tenant records management
-
-- Property/room association
-
-- Tenant discussion Forum
-
-- Status tracking (active, inactive, vacated)
-
-- Vacancy status management per property/unit
-
-### 🔐 Authentication & Authorization
-
-- Secure authentication flow
-
-- Role-based access control (Landlord / Tenant / Admin)
-
-- Protected routes using middleware
-
-### 📊 Dashboard
-
-* Role-based dashboards
-
-* System summaries and activity overviews
-
-* Rent payment insights for landlords
-
-* Clean and responsive UI
-
-### 🗂️ Data Management
-
-- CRUD operations for tenants, properties, messages, and rent records
-
-- MongoDB collections managed using Mongoose models
-
-- Server-side validation
-
-### ⚙️ Backend API
-
-- Built-in API routes using Next.js
-
-- Clean separation of Authentication, Authorization, models, and utilities
-
-- Centralized database connection logic
-
-- Secure endpoints for rent tracking and vacancy queries
-
-### 🌐 Modern Frontend
-
-- Next.js (App Router)
-
-- Server Components & Client Components
-
-- Responsive layout
-
-- Reusable UI components
-
-### 💰 Rent Payment Tracking
-
-- Landlords can track rent payments per tenant
-
-- Payment status indicators (Paid / Pending / Overdue)
-
-- Historical rent records for accountability
-
-### 👀 Public Vacancy Viewing
-
-* Visitors can view available vacant rooms or properties
-
-* No authentication required for vacancy listings
-
-* Clear property details and availability status
----
-
-## 🛠️ Tech Stack
-| Frontend | Backend | Database | Tooling |
-| --- | --- | --- | --- |
-| **Next.js** (App Router) | **Next.js API Routes** | **MongoDB** | Git & GitHub |
-| **TypeScript & JavaScript** | **Node.js** runtime | **Mongoose** ODM | Environment variables (`.env`) |
-| **React** | **Mongoose** ODM | **Prisma** ORM | ESLint |
-| Tailwind CSS | **Prisma** ORM | |
-
+- ⚡ Next.js App Router
+- 🧠 API Routes
+- 🗄️ MongoDB + Mongoose
+- 🎨 Tailwind CSS
+- 🔐 Autenticación segura
 
 ---
 
-## 🔗 Database Connection (Mongoose)
+# ✨ Características
 
-The system uses a **single reusable MongoDB connection** to prevent multiple connections during hot reloads in development.
+## 💬 Comunicación landlord–tenant
 
-Key points:
-
-* Connection handled in `lib/db.ts`
-* Cached connection for performance
-* Uses environment variables for security
-
----
-
-## 🧩 Models
-
-Each MongoDB collection is defined using a **Mongoose schema**.
-
-Example:
-
-* User Model
-* Role‑based fields
-* Timestamps enabled
-
-Models are reusable across API routes and server actions.
+- 🔒 Mensajería segura
+- 📩 Comunicación centralizada
+- 📢 Anuncios y avisos
+- 🧾 Historial de conversaciones
+- 📬 Notificaciones administrativas
 
 ---
 
-## 🔐 Environment Variables
+## 🏠 Gestión inmobiliaria
 
-Create a `.env` file in the root directory:
+- 🏢 Administración de propiedades
+- 🚪 Gestión de habitaciones
+- 👤 Registro de inquilinos
+- 📍 Asociación tenant-property
+- 📊 Estado de ocupación
+
+---
+
+## 💰 Gestión de rentas
+
+- 💳 Seguimiento de pagos
+- 📅 Control de mensualidades
+- ⚠️ Indicadores de adeudos
+- 📈 Historial financiero
+- 🧾 Registro de rentas
+
+---
+
+## 🔐 Autenticación y seguridad
+
+- 🔑 Login seguro
+- 🛡️ Middleware de protección
+- 👨‍💼 Roles administrativos
+- 👥 Acceso landlord / tenant
+- 🔒 Rutas protegidas
+
+---
+
+## 📊 Dashboard administrativo
+
+- 📈 Paneles dinámicos
+- 📋 Resumen operativo
+- 📊 Estadísticas del sistema
+- 🧠 Información centralizada
+- 📱 Diseño responsive
+
+---
+
+## 🌐 Plataforma moderna
+
+- ⚡ Next.js App Router
+- 🎨 Componentes reutilizables
+- 📱 Responsive Design
+- 🖥️ Server & Client Components
+- 🚀 Arquitectura escalable
+
+---
+
+# 🛠️ Tecnologías utilizadas
+
+## ⚛️ Frontend
+
+<p>
+  <img src="https://skillicons.dev/icons?i=nextjs,react,tailwind,ts,js" />
+</p>
+
+- Next.js
+- React
+- TypeScript
+- JavaScript
+- Tailwind CSS
+
+---
+
+## 🌐 Backend
+
+<p>
+  <img src="https://skillicons.dev/icons?i=nodejs" />
+</p>
+
+- Next.js API Routes
+- Node.js Runtime
+- Middleware
+- Server Actions
+
+---
+
+## 🗄️ Base de datos
+
+<p>
+  <img src="https://skillicons.dev/icons?i=mongodb" />
+</p>
+
+- MongoDB
+- Mongoose ODM
+- Prisma ORM
+- Modelos reutilizables
+
+---
+
+## ⚙️ Herramientas
+
+<p>
+  <img src="https://skillicons.dev/icons?i=git,github,vscode" />
+</p>
+
+- Git
+- GitHub
+- ESLint
+- Variables de entorno
+
+---
+
+# 📂 Estructura del proyecto
+
+```bash
+Rental-management-system/
+│
+├── app/
+│
+├── components/
+│
+├── lib/
+│   └── db.ts
+│
+├── models/
+│
+├── api/
+│
+├── middleware/
+│
+├── public/
+│
+├── prisma/
+│
+├── .env
+├── package.json
+│
+└── README.md
+```
+
+---
+
+# ⚡ Instalación
+
+## 📋 Requisitos
+
+- Node.js
+- npm
+- MongoDB
+- Git
+
+---
+
+# 🚀 Configuración del proyecto
+
+## 1️⃣ Clonar repositorio
+
+```bash
+git clone https://github.com/nianod/Rental-management-system
+```
+
+---
+
+## 2️⃣ Entrar al proyecto
+
+```bash
+cd Rental-management-system
+```
+
+---
+
+## 3️⃣ Instalar dependencias
+
+```bash
+npm install
+```
+
+---
+
+## 4️⃣ Configurar variables de entorno
+
+Crear archivo:
+
+```bash
+.env
+```
+
+Agregar:
 
 ```env
 MONGODB_URI=your_mongodb_connection_string
@@ -190,91 +257,198 @@ ADMIN_ID=your_admin_id
 ADMIN_PASSWORD=your_password
 ```
 
-> ⚠️ Never commit `.env.local` to GitHub.
-
 ---
 
-## ▶️ Getting Started
-
-### 1️⃣ Clone the Repository
-
-```bash
-git clone https://github.com/nianod/Rental-management-system
-cd Rental-management-system
-```
-
-### 2️⃣ Install Dependencies
-
-```bash
-npm install
-```
-
-### 3️⃣ Run Development Server
+## 5️⃣ Ejecutar servidor
 
 ```bash
 npm run dev
 ```
 
-App runs on:
+Aplicación disponible en:
 
-```
+```bash
 http://localhost:3000
 ```
 
 ---
 
-## 🧪 API Endpoints (Example)
+# 🔐 Acceso administrativo
 
-| Method | Endpoint       | Description     |
-| ------ | -------------- | --------------- |
-| GET    | /api/users     | Fetch all users |
-| POST   | /api/users     | Create new user |
-| PUT    | /api/users/:id | Update user     |
-| DELETE | /api/users/:id | Delete user     |
+## 👨‍💼 Credenciales admin
 
----
-
-## 🧠 Design Principles
-
-* **Separation of concerns**
-* **Scalable folder structure**
-* **Reusable components**
-* **Secure by default**
-* **Production‑ready architecture**
+```txt
+ADMIN ID: Arnoldk
+PASSCODE: qwertyuiop
+```
 
 ---
 
-## 🚧 Future Improvements(implementation on progress)
+# 🧠 Flujo del sistema
 
-* Real-time messaging (WebSockets)
-* Rent payment tracking & reminders
-* Maintenance request module
-* Read receipts & message status
-* File uploads (agreements, notices)
-* Notifications (email / in-app)
-* Audit logs
+## 🔑 Administración de tenants
 
----
+### 1️⃣ Iniciar sesión como administrador
 
-## 🤝 Contributing
-
-Contributions are welcome!
-
-1. Fork the repository
-2. Create a new branch
-3. Commit your changes
-4. Open a pull request
+- Acceso al dashboard principal
+- Gestión completa del sistema
 
 ---
 
-## 📄 License
+### 2️⃣ Crear tenant
 
-This project is licensed under the **MIT License**.
+- Asignar habitación
+- Crear credenciales
+- Registrar información
 
 ---
 
- 
+### 3️⃣ Acceso tenant
 
-> 👨‍💻 Developer: **Arnold**
+- Inicio de sesión individual
+- Dashboard personalizado
+- Comunicación con landlord
 
-Aspiring Tech Professional | Full‑Stack Developer
+---
+
+> ⚠️ Los tenants no pueden registrarse manualmente. Todas las cuentas son creadas por el administrador.
+
+---
+
+# 🗄️ Gestión de base de datos
+
+## 🔗 MongoDB + Mongoose
+
+La plataforma utiliza una conexión reutilizable para evitar múltiples conexiones activas durante el desarrollo.
+
+Características:
+
+- ⚡ Conexión cacheada
+- 🔒 Variables de entorno
+- 🧠 Arquitectura optimizada
+- 📦 Gestión centralizada
+
+---
+
+# 🧩 Modelos del sistema
+
+## 📄 Schemas reutilizables
+
+El sistema incluye modelos para:
+
+- 👤 Usuarios
+- 🏢 Propiedades
+- 💬 Mensajes
+- 💰 Rentas
+- 🔐 Roles
+- 📊 Actividades
+
+---
+
+# 📡 API Endpoints
+
+| Método | Endpoint | Descripción |
+|---|---|---|
+| GET | `/api/users` | Obtener usuarios |
+| POST | `/api/users` | Crear usuario |
+| PUT | `/api/users/:id` | Actualizar usuario |
+| DELETE | `/api/users/:id` | Eliminar usuario |
+
+---
+
+# 📸 Vista previa
+
+<div align="center">
+
+<img width="1000" src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1200&auto=format&fit=crop" />
+
+</div>
+
+---
+
+# 🧠 Principios del proyecto
+
+## 🎯 Arquitectura moderna
+
+- Separación de responsabilidades
+- Componentes reutilizables
+- Arquitectura escalable
+- Seguridad por defecto
+- Código mantenible
+- Diseño responsive
+
+---
+
+# 🚧 Roadmap
+
+## 🔮 Próximas mejoras
+
+- 💬 Chat en tiempo real
+- 🔔 Notificaciones push
+- 📧 Emails automáticos
+- 📎 Subida de archivos
+- 🛠️ Solicitudes de mantenimiento
+- 📊 Logs administrativos
+- 💳 Automatización de pagos
+
+---
+
+# 🤝 Contribuciones
+
+Las contribuciones son bienvenidas ❤️
+
+## Cómo contribuir
+
+1. Fork del proyecto
+
+```bash
+git checkout -b feature/nueva-funcionalidad
+```
+
+2. Commit
+
+```bash
+git commit -m "✨ Nueva funcionalidad"
+```
+
+3. Push
+
+```bash
+git push origin feature/nueva-funcionalidad
+```
+
+4. Pull Request 🚀
+
+---
+
+# 👨‍💻 Comunidad
+
+<div align="center">
+
+## Isai Reyes — Full Stack Developer
+
+Plataforma moderna enfocada en administración inmobiliaria, comunicación y gestión de rentas 🏢
+
+</div>
+
+---
+
+# 🌟 Apoya el proyecto
+
+⭐ Dale una estrella  
+🍴 Haz fork  
+📢 Comparte el proyecto
+
+---
+
+# 📜 Licencia
+
+Proyecto open source bajo licencia MIT para fines educativos, administrativos y de aprendizaje Full Stack.
+
+---
+
+<div align="center">
+
+### 🏢 Rental System Management — administración inteligente de propiedades 🚀
+
+</div>
