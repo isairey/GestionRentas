@@ -421,13 +421,13 @@ git push origin feature/nueva-funcionalidad
 
 ---
 
-# 👨‍💻 Comunidad
+# 👨‍💻 Desarrollador
 
 <div align="center">
 
 ## Isai Reyes — Full Stack Developer
 
-Plataforma moderna enfocada en administración inmobiliaria, comunicación y gestión de rentas 🏢
+Desarrollador apasionado por la creación de plataformas modernas, sistemas administrativos, aplicaciones Full Stack y soluciones escalables 🚀
 
 </div>
 
