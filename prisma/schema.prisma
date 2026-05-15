@@ -1,0 +1,16 @@
+// datasource db {
+//   provider = "mongodb"
+// }
+
+// generator client {
+//   provider = "prisma-client-js"
+// }
+
+// model User {
+//   id         String   @id @default(auto()) @map("_id") @db.ObjectId
+//   roomNumber String?  @unique
+//   adminId    String?  @unique
+//   password   String
+//   role       String
+// }
+
