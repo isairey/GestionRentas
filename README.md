@@ -174,7 +174,7 @@ La plataforma implementa una arquitectura Full Stack moderna utilizando:
 # 📂 Estructura del proyecto
 
 ```bash
-Rental-management-system/
+GestionRentas/
 │
 ├── app/
 │
@@ -217,7 +217,7 @@ Rental-management-system/
 ## 1️⃣ Clonar repositorio
 
 ```bash
-git clone https://github.com/nianod/Rental-management-system
+git clone https://github.com/isairey/GestionRentas
 ```
 
 ---
@@ -225,7 +225,7 @@ git clone https://github.com/nianod/Rental-management-system
 ## 2️⃣ Entrar al proyecto
 
 ```bash
-cd Rental-management-system
+cd GestionRentas
 ```
 
 ---
@@ -278,7 +278,7 @@ http://localhost:3000
 ## 👨‍💼 Credenciales admin
 
 ```txt
-ADMIN ID: Arnoldk
+ADMIN ID: admin
 PASSCODE: qwertyuiop
 ```
 
